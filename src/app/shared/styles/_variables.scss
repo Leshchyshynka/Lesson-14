@@ -1,0 +1,51 @@
+@import "media";
+@import "font";
+@import "typography";
+
+
+$white: #ffffff;
+$black: #2D2C2C;
+$darkGrey: #3b3a3a;
+$lightGrey: #6d6d6d;
+$lighterGrey: #dfdbdb;
+
+$red:#EF2F3D;
+$green: #599921;
+$yellow:#ffcc00;
+
+$main: #009688;
+$darkTeal: #077a6f;
+$scroollBg: #d0f5f1;
+$greyBg:#f5f4f4;
+$facebook: #1f1675;
+$instagram: linear-gradient(
+  180deg,
+  rgba(131, 58, 180, 1) 0%,
+  rgba(253, 29, 29, 1) 50%,
+  rgba(252, 176, 69, 1) 100%
+);
+
+%header{
+  color: $darkTeal;
+  font-size: 38px;
+  font-family: 'Cera-Round-Pro-Bold';
+  @include respond(Medium) {
+   font-size: 32px;
+ }
+ @include respond(Small) {
+   font-size: 25px;
+ }
+}
+%container{
+  width: 90%;
+  margin: 40px auto;
+  @include respond(Medium) {
+    width: 95%;
+    margin: 30px auto;
+  }
+  @include respond(Small) {
+    width: 97%;
+    margin: 20px auto;
+  }
+
+}
